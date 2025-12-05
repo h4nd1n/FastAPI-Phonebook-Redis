@@ -1,0 +1,8 @@
+repos:
+  # Ruff (линтер + автофиксы + форматтер)
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.6.9   # укажите актуальную версию ruff: ruff --version
+    hooks:
+      - id: ruff
+        args: [ --fix ]   # сразу чинить простые ошибки
+      - id: ruff-format
