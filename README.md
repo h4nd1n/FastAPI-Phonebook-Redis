@@ -22,9 +22,8 @@
 
 ## Локальный запуск без Docker
 ```bash
-python -m venv .venv
+uv sync
 . .venv/bin/activate        # PowerShell: .venv\Scripts\Activate
-pip install -r requirements.txt
 uvicorn src.main:create_app --reload --factory
 ```
 
